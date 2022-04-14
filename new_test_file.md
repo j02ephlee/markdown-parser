@@ -1,2 +1,2 @@
-(something)[google.com]
-(also something)[youtube.com]
+[something](google.com)
+[also something](youtube.com)
