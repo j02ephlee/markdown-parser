@@ -1,4 +1,5 @@
 /*
+
 javac -cp ".;lib\junit-4.13.2.jar;lib\hamcrest-core-1.3.jar" MarkdownParseTest.java
 java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore MarkdownParseTest
 */
@@ -17,23 +18,6 @@ public class MarkdownParseTest {
         assertEquals(2, 1+1);
     }
 
-    @Test
-    public void getLinksTest() throws IOException {
-        Path fileName = getLinks("test-file.md");
-        String content = Files.readString(fileName);
-        ArrayList<String> links = getLinks(content);
-
-    }
-
-    /*
-    `[a link`](url.com)
-
-    [another link](`google.com)`
-
-    [`cod[e`](google.com)
-
-    [`code]`](ucsd.edu)
-    */
     @Test
     public void labReport4TestOne() throws IOException {
         Path fileName = Path.of("lab-report-4-test-file1.md");
